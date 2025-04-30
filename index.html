@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Palette Generator</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 2rem; }
+    select { width: 100%; padding: 0.5rem; margin-top: 0.25rem; }
+    .swatches { display: flex; margin-top: 1rem; gap: 0.5rem; }
+    .swatch { width: 50px; height: 50px; border-radius: 4px; border: 1px solid #ccc; }
+  </style>
+</head>
+<body>
+  <h1>Jewelry Color Palette Generator</h1>
+  <select id="theme">
+    <option value="">Select a Theme</option>
+    <option value="earthy">Earthy & Organic</option>
+    <option value="pastels">Romantic Pastels</option>
+    <option value="bold">Bold & Bright</option>
+  </select>
+  <div class="swatches" id="swatches"></div>
+  <script>
+    const themes = {
+      earthy: ['#8D6E63', '#A1887F', '#6D4C41', '#4E342E', '#C1A57B'],
+      pastels: ['#FADADD', '#E2D1F9', '#D0F0C0', '#F5F5DC', '#F7CAC9'],
+      bold: ['#FF007F', '#00CED1', '#FFD700', '#FF4500', '#8A2BE2']
+    };
+
+    document.getElementById('theme').addEventListener('change', function() {
+      const swatchContainer = document.getElementById('swatches');
+      const colors = themes[this.value] || [];
+      swatchContainer.innerHTML = '';
+      colors.forEach(color => {
+        const div = document.createElement('div');
+        div.className = 'swatch';
+        div.style.backgroundColor = color;
+        swatchContainer.appendChild(div);
+      });
+    });
+  </script>
+</body>
+</html>

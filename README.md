@@ -1,2 +1,25 @@
-# color-palette-generator
-Color is everything when it comes to jewelry design. The right palette can turn a simple project into a breathtaking masterpiece. That's why we created our free Color Palette Generator — to inspire your creativity and make designing easier than ever.
+# Jewelry Color Palette Generator
+
+This is a free, embeddable tool for jewelry designers and hobbyists.
+
+## 🚀 Live Demo
+(Coming Soon on GitHub Pages)
+
+## 💾 How to Embed This Tool
+
+```html
+<iframe 
+  src="https://yourusername.github.io/color-palette-generator" 
+  width="100%" 
+  height="600" 
+  frameborder="0" 
+  style="border: 1px solid #ccc; border-radius: 8px;">
+</iframe>
+<p style="font-size: 0.9rem; text-align: center;">
+  Tool provided by <a href="https://www.continentalbeadsuppliers.com" target="_blank" rel="noopener">Continental Bead Suppliers</a>
+</p>
+```
+
+## ✨ About the Creator
+
+This tool was developed by [Dean Aaron](https://www.continentalbeadsuppliers.com), owner of Continental Bead Suppliers — a wholesale and retail jewelry-making supply company based in Las Vegas, NV.
